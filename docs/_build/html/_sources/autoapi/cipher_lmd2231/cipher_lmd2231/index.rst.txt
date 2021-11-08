@@ -1,0 +1,55 @@
+:py:mod:`cipher_lmd2231.cipher_lmd2231`
+=======================================
+
+.. py:module:: cipher_lmd2231.cipher_lmd2231
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   cipher_lmd2231.cipher_lmd2231.cipher
+
+
+
+.. py:function:: cipher(text, shift, encrypt=True)
+
+   Encrypts and decrypts words written using a Caesar cipher, which replaces a letter with
+   another letter a given number of places away in the alphabet.
+
+   :param text: The String that should be processed in the function
+   :type text: String
+   :param shift: The number of alphabetic positions away the individual letters of the String should be
+                 shifted. Can be positive or negative.
+   :type shift: Integer
+   :param encrypt: Indicates whether the function should return the text encrypted or decrypted.
+   :type encrypt: Boolean, default True
+
+   :returns: The encrypted or decrypted version of the text input.
+   :rtype: String
+
+   .. rubric:: Examples
+
+   >>> from cipher_lmd2231 import cipher
+   >>> cipher(text='OneSingleWord', shift=5, encrypt=True)
+   TsjXnslqjbtwi
+
+   Each character in `OneSingleWord` is shifted 5 places ahead.
+
+   >>> cipher(text='TsjXnslqjbtwi', shift=-5, encrypt=True)
+   OneSingleWord
+
+   Each character in `TsjXnslqjbtwi` is shifted 5 places back.
+
+   >>> cipher(text='TsjXnslqjbtwi', shift=5, encrypt=False)
+   OneSingleWord
+
+   Each character in `TsjXnslqjbtwi` is shifted 5 places back due to the encrypt
+   argument.
+
+

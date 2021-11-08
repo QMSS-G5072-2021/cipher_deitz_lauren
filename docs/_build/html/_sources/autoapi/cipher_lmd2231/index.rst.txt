@@ -1,0 +1,23 @@
+:py:mod:`cipher_lmd2231`
+========================
+
+.. py:module:: cipher_lmd2231
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   cipher_lmd2231/index.rst
+
+
+Package Contents
+----------------
+
+.. py:data:: __version__
+   
+
+   
+
